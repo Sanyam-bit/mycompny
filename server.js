@@ -2,11 +2,11 @@ const express=require ('express')
 const app=express()
 
 app.get('/',(req, res) =>{
-    res.sendFile('Public/index.html',{root:__dirname})
+    res.sendFile('public/index.html',{root:__dirname})
 })
 
 app.get('/home',(req, res) =>{
-    res.sendFile('Public/parth.html',{root:__dirname})
+    res.sendFile('public/parth.html',{root:__dirname})
 })
 
 app.listen(3000,()=>{
